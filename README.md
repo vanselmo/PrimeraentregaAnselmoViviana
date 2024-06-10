@@ -1,4 +1,4 @@
-# Descripción del Proyecto
+# Descripción del proyecto
 
 Este proyecto es una aplicación de gestión de productos y carritos desarrollada en Node.js y Express. Permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) tanto en productos como en carritos.
 
@@ -17,9 +17,9 @@ El proyecto se inicializa con 10 productos precargados. Estos productos se utili
 ## Uso
 Para ejecutar la aplicación localmente, simplemente utiliza el siguiente comando:
 
-    ```bash
-    npm run dev
-    ```
+   ```bash
+   npm run dev
+   ```
 Esto iniciará el servidor en el puerto 8080. Puedes acceder a la API utilizando las rutas definidas en los archivos de rutas.
 
 ### Endpoints disponibles

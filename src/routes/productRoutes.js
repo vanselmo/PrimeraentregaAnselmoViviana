@@ -32,15 +32,22 @@ module.exports = (productManager) => {
     productsRouter.put("/:pid", async (req, res) => {
         const id = req.params.pid;
         const updatedFields = req.body;
-        await productManager.updateProduct(id, updatedFields);
-        res.send("Producto actualizado");
+        try {
+            await productManager.updateProduct(id, updatedFields);
+            res.send("Producto actualizado");
+        } catch (error) {
+            res.status(500).send("Error al actualizar el producto: " + error.message);
+        }
     });
-
     productsRouter.delete("/:pid", async (req, res) => {
         const id = req.params.pid;
-        await productManager.deleteProduct(id);
-        res.send("Producto eliminado");
+        try {
+            await productManager.deleteProduct(id);
+            res.send("Producto eliminado");
+        } catch (error) {
+            res.status(500).send("Error al eliminar el producto: " + error.message);
+        }
     });
-
+    
     return productsRouter;
 };

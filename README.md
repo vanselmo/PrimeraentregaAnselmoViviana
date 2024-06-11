@@ -14,6 +14,7 @@ El proyecto se inicializa con 10 productos precargados. Estos productos se utili
    ```bash
    npm install
    ```
+
 ## Uso
 Para ejecutar la aplicación localmente, simplemente utiliza el siguiente comando:
 
